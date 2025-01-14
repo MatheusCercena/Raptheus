@@ -59,6 +59,8 @@ header > nav > a:hover {
     background-color: white;
     color: black;
     transition:  background-color 0.3s;
+    transform: scale(1.15);
+    
 }
 
 header > div {
@@ -78,13 +80,13 @@ header > div > a {
     background-color: black;
     border-radius: 8px;
     box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
-
 }
 
 header > div > a:hover {
     background-color: white;
     color: black;
     transition:  background-color 0.3s;
+    transform: scale(1.15);
 }
 
 input {
@@ -95,6 +97,12 @@ input {
     margin: 4px;
     border: 2px solid black;
 }
+
+input:hover {
+    transform: scale(1.15); 
+}
+
+
 
 .media-query-1980-nav {
     display: none;
@@ -107,11 +115,14 @@ input {
 main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: center;    
+    background-image: url('imagens/hip-hop-album-covers-vs8liw8aqx3uxfg4\ -\ Copy.jpg');
+    background-color: white; /**/
+    background-repeat: repeat;
 }
 
 main > section {
-    width: 1200px;
+    width: 1250px;
 
     display: flex;
     flex-flow: wrap;
@@ -121,20 +132,47 @@ main > section {
 
 
 main > section > div {
-    height: 400px;
+    height: 420px;
     border: 1px solid black;
-    flex: 0 0 200px;
-    margin: 10px;
+    flex: 0 0 230px;
+    margin: 10px 10px 20px 10px;
     padding: 10px;
-
+    background-color: white;
+    border-radius: 10px;
 }
+
+main > section > div:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.08);
+}
+
 
 main > section > div > a > img {
     width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
 } 
 
 main > section > div > h1 {
     font-family: 'Boomster';
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+} 
+
+main > section > div > div > a {
+    font-family: 'Boomster';
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+} 
+
+main > section > div > div > a:hover {
+    text-shadow: 1px 1px 1px rgba(49, 48, 48, 0.5);
+    text-decoration: underline;
+    transform: scale(1.15);
 } 
 
 @media screen and (max-width: 1080px) {
