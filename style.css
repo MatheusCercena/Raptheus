@@ -130,7 +130,6 @@ main > section {
     justify-self: center;
 }
 
-
 main > section > div {
     height: 420px;
     border: 1px solid black;
@@ -146,18 +145,17 @@ main > section > div:hover {
     transform: scale(1.08);
 }
 
-
 main > section > div > a > img {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 10px;
 } 
 
-main > section > div > h1 {
+main > section > div > h1 { 
     font-family: 'Boomster';
     text-align: center;
     margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 2em;/*No "Westside Conection" foi setado 1.5em, tentar resolver depois com javascript*/
 } 
 
 main > section > div > div > a {
@@ -174,6 +172,11 @@ main > section > div > div > a:hover {
     text-decoration: underline;
     transform: scale(1.15);
 } 
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+}
 
 @media screen and (max-width: 1080px) {
     .media-query-1980-nav {
