@@ -7,11 +7,6 @@
 }
 
 @font-face  {
-    font-family: 'RockSalt';
-    src: url('fonts/RockSalt/LICENSERockSalt.ttf') format('truetype');
-}
-
-@font-face  {
     font-family: 'Boomster';
     src: url('fonts/boomster_graffiti/BOOMSTER.otf') format('truetype');
 }
@@ -60,7 +55,6 @@ header > nav > a:hover {
     color: black;
     transition:  background-color 0.3s;
     transform: scale(1.15);
-    
 }
 
 header > div {
