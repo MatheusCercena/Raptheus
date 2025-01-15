@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'RockSalt';
+    src: url(../fonts/RockSalt/LICENSERockSalt.ttf) format('truetype');
+}
+
+@font-face  {
+    font-family: 'Boomster';
+    src: url('../fonts/boomster_graffiti/BOOMSTER.otf') format('truetype');
+}
+
+:root {
+    --cor1: rgb(49, 48, 48);/*Menu e footer*/
+}
+
+main {
+    background-image: url('../imagens/hip-hop-album-covers-vs8liw8aqx3uxfg4\ -\ Copy.jpg');
+    background-color: var(--cor1);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+div {
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+    max-width: 80vw;
+    height: 320px;
+    max-height: 320px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+div > form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Boomster';
+    text-align: center;
+}
+
+label {
+    font-family: 'RockSalt';
+}
+
+main > div > form > p > input  {
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+main > div > form > input {
+    height: 40px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 13px;
+    color: white;
+    background-color: var(--cor1);
+}
+
