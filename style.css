@@ -83,13 +83,18 @@ header > div > a:hover {
     transform: scale(1.15);
 }
 
-.account_circle:hover {
-    displ
-}
 
-#entre-cadastro {
+#entre-cadastro > a {
     display: none;
 }
+
+/*
+tentativa de hover com o account - fazer com javascript.
+
+#account_circle:hover > div {
+    display: flex;
+}
+*/
 
 input {
     border-radius: 8px;
