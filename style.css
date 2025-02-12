@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: 'RockSalt';
-    src: url(../fonts/RockSalt/LICENSERockSalt.ttf) format('truetype');
+    src: url('fonts/RockSalt/LICENSERockSalt.ttf') format('truetype');
 }
 
 :root {
@@ -93,7 +93,7 @@ header > div > a:hover {
     display: none;
 }
 
-input {
+header > div > form > input {
     border-radius: 8px;
     font-size: 0.75em;
     width: 135px;
@@ -102,7 +102,7 @@ input {
     border: 2px solid black;
 }
 
-input:hover {
+header > div > form > input:hover {
     transform: scale(1.15); 
 }
 
@@ -242,34 +242,18 @@ footer {
     }
 }
 
-/* Estilos do Modal */
 .modal {
-    display: none; /* Inicialmente oculto */
-    position: fixed;
-    z-index: 1000;
+    display: none;
+    position: fixed; /*Faz o modal ficar preso na janela do navegador, ignorando os elementos da página.*/
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* Conteúdo do modal */
-/*
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 500px;
-    max-width: 90%;
-    height: 350px;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-*/
 
 .modal-content {
     background-color: white;
@@ -281,10 +265,54 @@ footer {
     padding: 20px;
     margin: 20px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-
 }
 
-/* Botão de fechar */
+.modal-content > form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content > form > h1 {
+    font-family: 'Boomster';
+    text-align: center;
+}
+
+.modal-content > form > p > label {
+    font-family: 'RockSalt';
+}
+
+.modal-content > form > p > input  {
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid var(--cor1);
+}
+
+.modal-content > form > p > input:hover {
+    border: 2px solid  rgba(49, 48, 48, 0.8);
+    transform: scale(1.03);
+
+} 
+
+.modal-content > form > input {
+    height: 40px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 13px;
+    color: white;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor1);
+}
+
+.modal-content > form > input:hover {
+    background-color: rgba(49, 48, 48, 0.8);
+    transform: scale(1.03);
+}
+
 .close {
     position: absolute;
     top: 10px;
@@ -293,7 +321,6 @@ footer {
     cursor: pointer;
 }
 
-/* Estilo do formulário dentro do modal */
 /*
 .modal-content form {
     display: flex;
@@ -324,60 +351,3 @@ footer {
     background-color: rgba(49, 48, 48, 0.8);
 }
 */
-
-.modal-content {
-    background-color: white;
-    border-radius: 20px;
-    width: 500px;
-    max-width: 80vw;
-    height: 320px;
-    max-height: 320px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-
-}
-
-.modal-content > form {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-
-.modal-content > h1 {
-    font-family: 'Boomster';
-    text-align: center;
-}
-
-.modal-content > label {
-    font-family: 'RockSalt';
-}
-
-.modal-content > form > p > input  {
-    width: 100%;
-    border-radius: 10px;
-    height: 30px;
-    margin-top: 10px;
-    border: 1px solid var(--cor1);
-}
-
-
-.modal-content > form > p > input:hover {
-    border: 2px solid  rgba(49, 48, 48, 0.8);
-} 
-
-.modal-content > form > input {
-    height: 40px;
-    margin-top: 10px;
-    width: 100%;
-    border-radius: 13px;
-    color: white;
-    background-color: var(--cor1);
-    border: 1px solid var(--cor1);
-}
-
-.modal-content > form > input:hover {
-    background-color: rgba(49, 48, 48, 0.8);
-}

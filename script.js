@@ -17,6 +17,22 @@ Confirmação de Ação – Alertas personalizados para ações como sair da con
 Efeito de Parallax – Criar um fundo dinâmico que se move ao rolar a página.
 */
 
+function aparecer_modal() {
+    document.getElementsByClassName('modal').style.display = 'block';
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("loginModal");
     const loginLinks = document.querySelectorAll('a[href="paginas secundarias/login.html"]'); 
@@ -43,3 +59,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+*/
