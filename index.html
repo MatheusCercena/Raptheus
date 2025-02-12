@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="imagens/logo-site.png" id="logo"><!--Tudo sobre seu rapper-->
+        <img src="imagens/logo-site.png" id="logo">
         <nav class="no-query-nav">
             <a href="#">Eminem</a>
             <a href="#">2Pac</a>
@@ -43,7 +43,7 @@
         <div class="no-query-div">
             <form action="#"><input type="text" placeholder="Pesquise no site"></input></form>
             <a href="#">Loja</a>
-            <a href="paginas secundarias/login.html">Entre</a>
+            <a onclick="aparecer_modal()">Entre</a>
             <a href="#">Cadastro</a>
         </div>
         <div class="media-query-1980-div">
@@ -165,39 +165,32 @@
         </section>
     </main>
 <!-- Modal de Login -->
- 
-<div id="loginModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span><!--&times equivale ao X, para poder fechar o modal-->
-        <form action="#">
-            <h1>Entre na sua conta</h1>
-                <p>
-                    <label for="Email">Digite o seu email:</label>
-                    <input type="email" name="Email" id="iEmail">
-                </p>
-                <p>
-                    <label for="Senha">Defina sua senha:</label><br>
-                    <input type="password" name="Senha" id="iSenha" placeholder="Até 8 caracteres">
-                </p>
-                <input type="submit" value="Entrar">
-        </form>
-</div>
-</div>
-    <footer>
-        <h1>Institucional</h1>
-        <p>Quem somos</p>
-        <p>Contato (telefone, redes sociais, etc)</p>
-        <p>Loja</p>
-        <p>Minha conta</p>
-        <p>etc</p>
-        <p>Site desenvolvido em jan/25 por Matheus Cercena do Nascimento. All Rights Reserved ©.</p>
-    </footer>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="material-symbols-outlined" id="close" onclick="closeModal()">close</span>
+            <form action="#">
+                <h1>Entre na sua conta</h1>
+                    <p>
+                        <label for="Email">Digite o seu email:</label>
+                        <input type="email" name="Email" id="iEmail">
+                    </p>
+                    <p>
+                        <label for="Senha">Defina sua senha:</label><br>
+                        <input type="password" name="Senha" id="iSenha" placeholder="Até 8 caracteres">
+                    </p>
+                    <input type="submit" value="Entrar">
+            </form>
+    </div>
+    </div>
+        <footer>
+            <h1>Institucional</h1>
+            <p>Quem somos</p>
+            <p>Contato (telefone, redes sociais, etc)</p>
+            <p>Loja</p>
+            <p>Minha conta</p>
+            <p>etc</p>
+            <p>Site desenvolvido em jan/25 por Matheus Cercena do Nascimento. All Rights Reserved ©.</p>
+        </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
-<!--Fazer:
-tela de login
-loja
-rodapé
--->

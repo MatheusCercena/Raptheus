@@ -18,11 +18,12 @@ Efeito de Parallax – Criar um fundo dinâmico que se move ao rolar a página.
 */
 
 function aparecer_modal() {
-    document.getElementsByClassName('modal').style.display = 'block';
+    document.querySelector('.modal').style.display = "flex";
 }
 
-
-
+function closeModal() {
+    document.querySelector('.modal').style.display = "none";
+}
 
 
 
@@ -38,18 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const loginLinks = document.querySelectorAll('a[href="paginas secundarias/login.html"]'); 
     const closeBtn = document.querySelector(".close");
 
-    // Abre o modal ao clicar no link "Entre" ou "Cadastro"
-    loginLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita o redirecionamento
-            modal.style.display = "flex";
-        });
-    });
-
-    // Fecha o modal ao clicar no "X"
-    closeBtn.addEventListener("click", function () {
-        modal.style.display = "none";
-    });
 
     // Fecha o modal se o usuário clicar fora dele
     window.addEventListener("click", function (event) {
