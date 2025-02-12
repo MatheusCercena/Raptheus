@@ -20,6 +20,8 @@
     --cor1: rgb(49, 48, 48);/*Menu e footer*/
 }
 
+/*-----------------*/
+
 main {
     background-image: url('../imagens/hip-hop-album-covers-vs8liw8aqx3uxfg4\ -\ Copy.jpg');
     background-color: var(--cor1);
@@ -30,6 +32,8 @@ main {
     height: 100vh;
     width: 100vw;
 }
+
+/*-----------------*/
 
 div {
     background-color: white;
