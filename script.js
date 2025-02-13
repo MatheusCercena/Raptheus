@@ -37,35 +37,3 @@ function closeModal2() {
 }
 
 // Fim do Modal
-
-let lastScrollY = window.scrollY;
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 50 && window.scrollY > lastScrollY) {
-        // Rolando para baixo -> Esconde o menu
-        header.style.transform = "translateY(-100%)";
-    } else {
-        // Rolando para cima -> Mostra o menu
-        header.style.transform = "translateY(0)";
-    }
-    lastScrollY = window.scrollY;
-});
-
-/* Começo do ...
-
-Fazer funcionar
-
-window.addEventListener("scroll", aparecerMenu)
-
-function aparecerMenu() {
-    let ultimaPosiçãoEixoY = window.scrollY
-    let posiçãoEixoY = window.scrollY
-
-    if ( posiçãoEixoY > ultimaPosiçãoEixoY) {
-        document.querySelector('.main').style.background-color = 'blue'
-
-    }
-}
-
-*/
