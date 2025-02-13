@@ -28,6 +28,15 @@ header {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+/* entender como funciona junto de scrollY
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+*/
 }
 
 header > img {

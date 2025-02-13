@@ -15,37 +15,57 @@ Animação de Digitação – Criar um efeito de digitação automática em tít
 Filtro de Rappers – Permitir filtrar artistas por década, estilo, etc.
 Confirmação de Ação – Alertas personalizados para ações como sair da conta ou excluir um favorito.
 Efeito de Parallax – Criar um fundo dinâmico que se move ao rolar a página.
+Fazer o Menu aparecer ao fazer scroll pra cima
 */
+// Começo do Modal
+let modal = document.querySelector('.modal')
 
 function aparecer_modal() {
-    document.querySelector('.modal').style.display = "flex";
+    modal.style.display = "flex";
 }
 
 function closeModal() {
-    document.querySelector('.modal').style.display = "none";
+    modal.style.display = "none";
 }
 
+window.addEventListener("click", closeModal2) 
 
+function closeModal2() {
+    if (event.target === modal) {
+        modal.style.display = "none"
+    }
+}
 
+// Fim do Modal
 
+let lastScrollY = window.scrollY;
+const header = document.querySelector("header");
 
-
-
-
-/*
-
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("loginModal");
-    const loginLinks = document.querySelectorAll('a[href="paginas secundarias/login.html"]'); 
-    const closeBtn = document.querySelector(".close");
-
-
-    // Fecha o modal se o usuário clicar fora dele
-    window.addEventListener("click", function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50 && window.scrollY > lastScrollY) {
+        // Rolando para baixo -> Esconde o menu
+        header.style.transform = "translateY(-100%)";
+    } else {
+        // Rolando para cima -> Mostra o menu
+        header.style.transform = "translateY(0)";
+    }
+    lastScrollY = window.scrollY;
 });
+
+/* Começo do ...
+
+Fazer funcionar
+
+window.addEventListener("scroll", aparecerMenu)
+
+function aparecerMenu() {
+    let ultimaPosiçãoEixoY = window.scrollY
+    let posiçãoEixoY = window.scrollY
+
+    if ( posiçãoEixoY > ultimaPosiçãoEixoY) {
+        document.querySelector('.main').style.background-color = 'blue'
+
+    }
+}
 
 */
