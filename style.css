@@ -190,7 +190,9 @@ footer {
     color: white;
 }
 
-.modal {
+/*Começo modal login e cadastro*/
+
+.modal-Entre, .modal-Cadastro {
     display: none;
     position: fixed; /*Faz o modal ficar preso na janela do navegador, ignorando os elementos da página.*/
     left: 0;
@@ -202,7 +204,7 @@ footer {
     align-items: center;
 }
 
-.modal-content {
+.modal-content-Entre, .modal-content-Cadastro {
     position: relative;
     background-color: white;
     border-radius: 20px;
@@ -215,7 +217,7 @@ footer {
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.modal-content > form {
+.modal-content-Entre > form, .modal-content-Cadastro > form {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -223,16 +225,16 @@ footer {
     height: 100%;
 }
 
-.modal-content > form > h1 {
+.modal-content-Entre > form > h1, .modal-content-Cadastro > form > h1  {
     font-family: 'Boomster';
     text-align: center;
 }
 
-.modal-content > form > p > label {
+.modal-content-Entre > form > p > label, .modal-content-Cadastro > form > p > label {
     font-family: 'RockSalt';
 }
 
-.modal-content > form > p > input  {
+.modal-content-Entre > form > p > input, .modal-content-Cadastro > form > p > input  {
     width: 100%;
     border-radius: 10px;
     height: 30px;
@@ -241,13 +243,13 @@ footer {
     padding-left: 10px;
 }
 
-.modal-content > form > p > input:hover {
+.modal-content-Entre > form > p > input:hover, .modal-content-Cadastro > form > p > input:hover {
     border: 2px solid  rgba(49, 48, 48, 0.8);
     transform: scale(1.03);
 
 } 
 
-.modal-content > form > input {
+.modal-content-Entre > form > input, .modal-content-Cadastro > form > input {
     height: 40px;
     margin-top: 10px;
     width: 100%;
@@ -257,12 +259,12 @@ footer {
     border: 1px solid var(--cor1);
 }
 
-.modal-content > form > input:hover {
+.modal-content-Entre > form > input:hover, .modal-content-Cadastro > form > input:hover {
     background-color: rgba(49, 48, 48, 0.8);
     transform: scale(1.03);
 }
 
-#close {
+.close {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -270,6 +272,9 @@ footer {
     cursor: pointer;
     color: black;
 }
+
+/*Fim modal login*/
+
 
 @media screen and (max-width: 1080px) {
     header > img {

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/> 
 </head>
 <body>
-    <header id="menuu">
+    <header>
         <img src="imagens/logo-site.png" id="logo">
         <nav class="no-query-nav">
             <a href="#">Eminem</a>
@@ -43,8 +43,8 @@
         <div class="no-query-div">
             <form action="#"><input type="text" placeholder="Pesquise no site"></input></form>
             <a href="#">Loja</a>
-            <a onclick="aparecer_modal()">Entre</a>
-            <a href="#">Cadastro</a>
+            <a onclick="aparecer_modalEntre()">Entre</a>
+            <a onclick="aparecer_modalCadastro()">Cadastro</a>
         </div>
         <div class="media-query-1980-div">
             <form action="#"><input type="text" placeholder="Pesquise no site" class="media-query-1980-div-form"></input></form>
@@ -53,8 +53,8 @@
             <a href="#">
                 <span class="material-symbols-outlined" id="account_circle"> account_circle 
                     <div id="entre-cadastro">
-                        <a onclick="aparecer_modal()">Entre</a>
-                        <a href="#">Cadastro</a>
+                        <a onclick="aparecer_modalEntre()">Entre</a>
+                        <a onclick="aparecer_modalCadastro()">Cadastro</a>
                     </div>
                 </span>
             </a>
@@ -164,10 +164,34 @@
             </div>
         </section>
     </main>
+    <!-- Modal de Cadastro -->
+<div class="modal-Cadastro">
+    <div class="modal-content-Cadastro">
+        <span class="material-symbols-outlined close" id="close" onclick="closeModalCadastro()">close</span>
+        <form action="#">
+            <h1>Cadastre-se</h1>
+                <p>
+                    <label for="Email">Digite o seu email:</label>
+                    <input type="email" name="Email" id="iEmail2">
+                </p>
+                <p>
+                    <label for="Email">Confirme o seu email:</label>
+                    <input type="email" name="Email" id="iEmail2">
+                </p>
+
+                <p>
+                    <label for="Senha">Defina sua senha:</label><br>
+                    <input type="password" name="Senha" id="iSenha2" placeholder="Até 8 caracteres">
+                </p>
+                <input type="submit" value="Entrar">
+        </form>
+    </div>
+</div>
+
 <!-- Modal de Login -->
-    <div class="modal">
-        <div class="modal-content">
-            <span class="material-symbols-outlined" id="close" onclick="closeModal()">close</span>
+    <div class="modal-Entre">
+        <div class="modal-content-Entre">
+            <span class="material-symbols-outlined close" id="close" onclick="closeModalEntre()">close</span>
             <form action="#">
                 <h1>Entre na sua conta</h1>
                     <p>
@@ -181,7 +205,9 @@
                     <input type="submit" value="Entrar">
             </form>
     </div>
-    </div>
+</div>
+
+
         <footer>
             <h1>Institucional</h1>
             <p>Quem somos</p>

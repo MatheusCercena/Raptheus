@@ -11,29 +11,101 @@ Sistema de Favoritos – Permitir que os usuários salvem rappers favoritos no l
 Carregamento Progressivo – Carregar imagens à medida que o usuário rola a página.
 Notificação de Novidades – Exibir uma mensagem destacando novas adições ao site.
 Integração com API de Música – Exibir trechos ou links para músicas de cada artista.
-Animação de Digitação – Criar um efeito de digitação automática em títulos ou descrições.
 Filtro de Rappers – Permitir filtrar artistas por década, estilo, etc.
 Confirmação de Ação – Alertas personalizados para ações como sair da conta ou excluir um favorito.
-Efeito de Parallax – Criar um fundo dinâmico que se move ao rolar a página.
 Fazer o Menu aparecer ao fazer scroll pra cima
 */
-// Começo do Modal
-let modal = document.querySelector('.modal')
 
-function aparecer_modal() {
-    modal.style.display = "flex";
+// Começo do Modal Entre
+
+let modalEntre = document.querySelector('.modal-Entre')
+
+function aparecer_modalEntre() {
+    modalEntre.style.display = "flex";
 }
 
-function closeModal() {
-    modal.style.display = "none";
+function closeModalEntre() {
+    modalEntre.style.display = "none";
 }
 
-window.addEventListener("click", closeModal2) 
+window.addEventListener("click", closeModalEntre2) 
 
-function closeModal2() {
-    if (event.target === modal) {
-        modal.style.display = "none"
+function closeModalEntre2() {
+    if (event.target === modalEntre) {
+        modalEntre.style.display = "none"
     }
 }
 
-// Fim do Modal
+// Fim do Modal Entre
+
+
+// Começo do Modal Cadastro
+
+let modalCadastro = document.querySelector('.modal-Cadastro')
+
+function aparecer_modalCadastro() {
+    document.querySelector('.modal-Cadastro').style.display = 'flex';
+}
+
+function closeModalCadastro() {
+    modalCadastro.style.display = "none";
+}
+
+window.addEventListener("click", closeModalCadastro2) 
+
+function closeModalCadastro2() {
+    if (event.target === modalCadastro) {
+        modalCadastro.style.display = "none"
+    }
+}
+
+
+// Fim do Modal Cadastro
+
+/* // Função genérica para abrir e fechar modais
+function controleModal(modalSelector) {
+    let modal = document.querySelector(modalSelector);
+
+    // Abrir o modal
+    function aparecerModal() {
+        modal.style.display = "flex";
+    }
+
+    // Fechar o modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Fechar o modal quando clicar fora dele
+    function closeModalClickOutside(event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    }
+
+    // Eventos para o modal
+    window.addEventListener("click", closeModalClickOutside);
+
+    // Retorna as funções para manipular o modal
+    return {
+        aparecerModal,
+        closeModal
+    };
+}
+
+// Inicia o controle para o modal "Entre"
+const modalEntre = controleModal('.modal-Entre');
+
+// Inicia o controle para o modal "Cadastro"
+const modalCadastro = controleModal('.modal-Cadastro');
+
+// Exemplo de como abrir os modais, você pode chamar essas funções quando necessário
+// Exemplo de abrir modais
+modalEntre.aparecerModal();   // Para abrir o modal "Entre"
+modalCadastro.aparecerModal(); // Para abrir o modal "Cadastro"
+
+// Exemplo de como fechar os modais, você pode chamar essas funções quando necessário
+// Exemplo de fechar modais
+modalEntre.closeModal();      // Para fechar o modal "Entre"
+modalCadastro.closeModal();   // Para fechar o modal "Cadastro"
+*/
