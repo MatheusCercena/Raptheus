@@ -59,6 +59,14 @@ function closeModalCadastro2() {
     }
 }
 
+function aparecerEntreCadastro() {
+    let entreCadastro = document.getElementById('entre-cadastro')
+    if (entreCadastro.style.display === "none") {
+        entreCadastro.style.display = "flex"
+    } else {
+        entreCadastro.style.display = "none"
+    }
+}
 
 // Fim do Modal Cadastro
 

@@ -51,12 +51,13 @@
             <a href=""><span class="material-symbols-outlined"> search </span></a>
             <a href="#">Loja</a>
             <a href="#">
-                <span class="material-symbols-outlined" id="account_circle"> account_circle 
-                    <div id="entre-cadastro">
-                        <a onclick="aparecer_modalEntre()">Entre</a>
-                        <a onclick="aparecer_modalCadastro()">Cadastro</a>
-                    </div>
-                </span>
+                <div class="material-symbols-outlined" id="account_circle" onclick="aparecerEntreCadastro()"> 
+                    account_circle
+                </div>
+                <div id="entre-cadastro">
+                    <a onclick="aparecer_modalEntre()">Entre</a>
+                    <a onclick="aparecer_modalCadastro()">Cadastro</a>
+                </div>
             </a>
             
         </div>
@@ -164,29 +165,6 @@
             </div>
         </section>
     </main>
-    <!-- Modal de Cadastro -->
-<div class="modal-Cadastro">
-    <div class="modal-content-Cadastro">
-        <span class="material-symbols-outlined close" id="close" onclick="closeModalCadastro()">close</span>
-        <form action="#">
-            <h1>Cadastre-se</h1>
-                <p>
-                    <label for="Email">Digite o seu email:</label>
-                    <input type="email" name="Email" id="iEmail2">
-                </p>
-                <p>
-                    <label for="Email">Confirme o seu email:</label>
-                    <input type="email" name="Email" id="iEmail2">
-                </p>
-
-                <p>
-                    <label for="Senha">Defina sua senha:</label><br>
-                    <input type="password" name="Senha" id="iSenha2" placeholder="Até 8 caracteres">
-                </p>
-                <input type="submit" value="Entrar">
-        </form>
-    </div>
-</div>
 
 <!-- Modal de Login -->
     <div class="modal-Entre">
@@ -207,6 +185,30 @@
     </div>
 </div>
 
+<!-- Modal de Cadastro -->
+    <div class="modal-Cadastro">
+        <div class="modal-content-Cadastro">
+            <span class="material-symbols-outlined close" id="close" onclick="closeModalCadastro()">close</span>
+            <form action="#">
+                <h1>Cadastre-se</h1>
+                    <p>
+                        <label for="Email">Digite o seu email:</label>
+                        <input type="email" name="Email" id="iEmail2">
+                    </p>
+                    <p>
+                        <label for="Email">Confirme o seu email:</label>
+                        <input type="email" name="Email" id="iEmail2">
+                    </p>
+    
+                    <p>
+                        <label for="Senha">Defina sua senha:</label><br>
+                        <input type="password" name="Senha" id="iSenha2" placeholder="Até 8 caracteres">
+                    </p>
+                    <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </div>
+    
 
         <footer>
             <h1>Institucional</h1>

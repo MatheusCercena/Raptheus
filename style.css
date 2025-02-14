@@ -80,7 +80,7 @@ header > div {
     font-size: 1.5em;
 }
 
-header > div > a {
+header > div > a, #entre-cadastro {
     text-decoration: none;
     color: white;
     padding: 5px;
@@ -91,7 +91,7 @@ header > div > a {
     cursor: pointer;
 }
 
-header > div > a:hover {
+header > div > a:hover, #entre-cadastro  {
     background-color: white;
     color: black;
     transition:  background-color 0.3s;
@@ -99,9 +99,19 @@ header > div > a:hover {
 }
 
 
-#entre-cadastro > a {
-    display: none;
+#account_circle {
+    position: relative;
 }
+
+#entre-cadastro {
+    display: none;
+    position: absolute;
+    top: 40px; 
+    left: 50px;
+    height: fit-content;
+    width: fit-content;
+}
+
 
 header > div > form > input {
     border-radius: 8px;
@@ -217,6 +227,19 @@ footer {
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+.modal-content-Cadastro {
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+    max-width: 80vw;
+    height: 360px;
+    max-height: 360px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
 .modal-content-Entre > form, .modal-content-Cadastro > form {
     display: flex;
     flex-flow: column nowrap;
@@ -251,7 +274,7 @@ footer {
 
 .modal-content-Entre > form > input, .modal-content-Cadastro > form > input {
     height: 40px;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100%;
     border-radius: 13px;
     color: white;
@@ -274,7 +297,6 @@ footer {
 }
 
 /*Fim modal login*/
-
 
 @media screen and (max-width: 1080px) {
     header > img {
