@@ -78,9 +78,11 @@ header > div {
 
     font-family: 'Boomster';
     font-size: 1.5em;
+    position: relative;
+
 }
 
-header > div > a, #entre-cadastro {
+header > div > a {
     text-decoration: none;
     color: white;
     padding: 5px;
@@ -91,7 +93,7 @@ header > div > a, #entre-cadastro {
     cursor: pointer;
 }
 
-header > div > a:hover, #entre-cadastro  {
+header > div > a:hover {
     background-color: white;
     color: black;
     transition:  background-color 0.3s;
@@ -106,12 +108,34 @@ header > div > a:hover, #entre-cadastro  {
 #entre-cadastro {
     display: none;
     position: absolute;
-    top: 40px; 
-    left: 50px;
-    height: fit-content;
-    width: fit-content;
+    flex-flow: column wrap;
+
+    top: 40px;
+    left: 40px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
+    text-decoration: none;
+    padding: 5px;
+    margin: 4px;
+    color: white;
+
 }
 
+
+#entre-cadastro > a  {
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    text-align: right;
+}
+
+#entre-cadastro  > a:hover {
+    background-color: white;
+    color: black;
+    transition:  background-color 0.3s;
+    transform: scale(1.15);
+}
 
 header > div > form > input {
     border-radius: 8px;
