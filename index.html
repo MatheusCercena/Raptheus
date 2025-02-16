@@ -59,9 +59,13 @@
                     <a onclick="aparecer_modalEntre()">Entre</a>
                     <a onclick="aparecer_modalCadastro()">Cadastro</a>
             </div>
-
-            
         </div>
+        <div id="menu-hamburguer">
+            <div class="material-symbols-outlined" onclick="aparecerMenuHamburguer()">
+                menu
+            </div>
+        </div>
+
     </header>
     <main>
         <section>
@@ -170,15 +174,16 @@
 <!-- Modal de Login -->
     <div class="modal-Entre">
         <div class="modal-content-Entre">
-            <span class="material-symbols-outlined close" id="close" onclick="closeModalEntre()">close</span>
             <form action="#">
                 <h1>Entre na sua conta</h1>
+                <div class="material-symbols-outlined close" id="close" onclick="closeModalEntre()">close</div>
+
                     <p>
                         <label for="Email">Digite o seu email:</label>
                         <input type="email" name="Email" id="iEmail">
                     </p>
                     <p>
-                        <label for="Senha">Defina sua senha:</label><br>
+                        <label for="Senha">Digite sua senha:</label><br>
                         <input type="password" name="Senha" id="iSenha" placeholder="Até 8 caracteres">
                     </p>
                     <input type="submit" value="Entrar">

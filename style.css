@@ -119,9 +119,7 @@ header > div > a:hover {
     padding: 5px;
     margin: 4px;
     color: white;
-
 }
-
 
 #entre-cadastro > a  {
     cursor: pointer;
@@ -135,6 +133,14 @@ header > div > a:hover {
     color: black;
     transition:  background-color 0.3s;
     transform: scale(1.15);
+}
+
+#menu-hamburguer {
+    display: ;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 header > div > form > input {
@@ -163,7 +169,7 @@ main {
     flex-flow: row wrap;
     justify-content: center;    
     background-image: url('imagens/hip-hop-album-covers-vs8liw8aqx3uxfg4\ -\ Copy.jpg');
-    background-color: white; /**/
+    background-color: white; 
     background-repeat: repeat;
 }
 
@@ -238,14 +244,11 @@ footer {
     align-items: center;
 }
 
-.modal-content-Entre, .modal-content-Cadastro {
+.modal-content-Entre {
     position: relative;
     background-color: white;
     border-radius: 20px;
-    width: 500px;
-    max-width: 80vw;
-    height: 320px;
-    max-height: 320px;
+    flex-basis: auto;
     padding: 20px;
     margin: 20px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -255,10 +258,7 @@ footer {
     position: relative;
     background-color: white;
     border-radius: 20px;
-    width: 500px;
-    max-width: 80vw;
-    height: 360px;
-    max-height: 360px;
+    flex-basis: auto;
     padding: 20px;
     margin: 20px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -361,8 +361,7 @@ footer {
     }
 
     .media-query-1980-nav {
-        display: flex;
-        order: 3;
+        display: none;
     }
 
     .no-query-nav {
@@ -377,10 +376,17 @@ footer {
     }
     .media-query-1980-div {
         display: flex;
-        order: 2;
+        order: 3;
+
     }
     .media-query-1980-div-form {
         display: none;
     }
+
+    #menu-hamburguer {
+        order: 2;
+
+    }
+
 }
 

@@ -68,6 +68,23 @@ function aparecerEntreCadastro() {
     }
 }
 
+function aparecerMenuHamburguer() {
+    let menuHamburguer = document.querySelector('.no-query-nav')
+    if (menuHamburguer.style.display === "none") {
+        menuHamburguer.style.display = "flex"
+    } else {
+        menuHamburguer.style.display = "none"
+    }
+}
+
+window.alert('Continuar menu-hamburguer e resolver botao close em cima do titulo de entrar em sua conta')
+
+/*
+    Object.assign(menuHamburguer, {
+        display: "flex"        
+    })
+*/
+
 // Fim do Modal Cadastro
 
 /* // Função genérica para abrir e fechar modais
