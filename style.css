@@ -32,6 +32,9 @@ header {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+
+    position: fixed;
+    width: 100%;
 }
 
 header > img {
@@ -95,11 +98,6 @@ header > div > a:hover {
     transform: scale(1.15);
 }
 
-
-#account_circle {
-    position: relative;
-}
-
 #entre-cadastro {
     display: none;
     position: absolute;
@@ -135,7 +133,7 @@ header > div > a:hover {
     transform: scale(1.15);
 }
 
-header > div > form > input {
+header > div > form > input, #pesquisa {
     border-radius: 8px;
     font-size: 0.75em;
     width: 135px;
@@ -144,16 +142,14 @@ header > div > form > input {
     border: 2px solid black;
 }
 
-header > div > form > input:hover {
+#pesquisa {
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+header > div > form > input:hover, #pesquisa:hover {
     transform: scale(1.15); 
-}
-
-.media-query-1980-nav {
-    display: none;
-}
-
-.media-query-1980-div {
-    display: none;
 }
 
 main {
@@ -163,6 +159,7 @@ main {
     background-image: url('imagens/hip-hop-album-covers-vs8liw8aqx3uxfg4\ -\ Copy.jpg');
     background-color: white; 
     background-repeat: repeat;
+    padding-top: 70px;
 }
 
 main > section {
@@ -316,6 +313,15 @@ footer {
 /*Fim modal login*/
 
 
+.media-query-1980-nav {
+    display: none;
+}
+
+.media-query-1980-div {
+    display: none;
+}
+
+
 #menu-hamburguer {
     display: none;
     color: white;
@@ -357,11 +363,52 @@ footer {
     transform: scale(1.15);
 }
 
+#simbolo-de-pesquisa {
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 4px;
+    box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+
+}
+
+#simbolo-de-pesquisa:hover {
+    background-color: white;
+    color: black;
+    transition:  background-color 0.3s;
+    transform: scale(1.15);
+}
+
+#account_circle {
+    background-color: black;
+    font-size: 1em;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 4px;
+    box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+
+}
+
+#account_circle:hover {
+    background-color: white;
+    color: black;
+    transition:  background-color 0.3s;
+    transform: scale(1.15);
+}
+
+
+
 @media screen and (max-width: 1080px) {
     header > img {
         order: 1;
-    }
 
+    }
+    
     .media-query-1980-nav {
         display: flex;
         order: 2;
@@ -382,8 +429,9 @@ footer {
         order: 3;
     }
     .media-query-1980-div-form {
-        display: none;
+        display: none; 
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -432,7 +480,5 @@ footer {
         height: auto;
         flex: 0 0 150px;
     }
-
-
 }
 

@@ -23,6 +23,7 @@
             <a href="#">NWA</a>
             <a href="#">D12</a>
             <a href="#">Westside Conection</a>
+            <a href="#">Ver todos</a>
         </nav>
         <nav class="media-query-1980-nav">
             <a href="#">Eminem</a>
@@ -31,20 +32,17 @@
             <a href="#">Ver todos</a>
         </nav>
         <div class="no-query-div">
-            <form action="#"><input type="text" placeholder="Pesquise no site"></input></form>
+            <form action="#"><input type="text" placeholder="Pesquise no site" id="pesquisa"></input></form>
             <a href="#">Loja</a>
             <a onclick="aparecer_modalEntre()">Entre</a>
             <a onclick="aparecer_modalCadastro()">Cadastro</a>
         </div>
         <div class="media-query-1980-div">
-            <form action="#"><input type="text" placeholder="Pesquise no site" class="media-query-1980-div-form"></input></form>
-            <a href=""><span class="material-symbols-outlined"> search </span></a>
+            <div id="simbolo-de-pesquisa"><div class="material-symbols-outlined" onclick="aparecerPesquisa()"> search </div></div>
             <a href="#">Loja</a>
-            <a href="#">
                 <div class="material-symbols-outlined" id="account_circle" onclick="aparecerEntreCadastro()"> 
                     account_circle
                 </div>
-            </a>
             <div id="entre-cadastro">
                     <a onclick="aparecer_modalEntre()">Entre</a>
                     <a onclick="aparecer_modalCadastro()">Cadastro</a>

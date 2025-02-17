@@ -8,8 +8,7 @@
 6 - Integração com API de Música – Exibir trechos ou links para músicas de cada artista.
 7 - Filtro de Rappers – Permitir filtrar artistas por década, estilo, etc.
 8 - Confirmação de Ação – Alertas personalizados para ações como sair da conta ou excluir um favorito.
-9 - Fazer o Menu aparecer ao fazer scroll pra cima
-
+9 - Fazer o Menu aparecer ao fazer scroll pra cima (e remover menu fixado)
 Feito:
 Login/Cadastro – Abrir uma janela modal ao clicar em "Entre" ou "Cadastro".
 Menu Responsivo – Criar um menu de hambúrguer para telas menores.
@@ -87,4 +86,14 @@ function aparecerMenu() {
 
 // Começo do 
 
-// Começo do 
+function aparecerPesquisa() {
+    let pesquisa = document.getElementById('pesquisa')
+
+    if (pesquisa.style.display === "none") {
+        pesquisa.style.display = "block"
+    } else {
+        pesquisa.style.display = "none"
+    }
+}
+
+// Fim do 
