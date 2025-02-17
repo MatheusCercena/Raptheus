@@ -87,13 +87,25 @@ function aparecerMenu() {
 // Começo do 
 
 function aparecerPesquisa() {
-    let pesquisa = document.getElementById('pesquisa')
+    let pesquisa = document.getElementById('pesquisa_media_query')
 
     if (pesquisa.style.display === "none") {
         pesquisa.style.display = "block"
+        pesquisa.focus()
+        /*
+        window.addEventListener("click", fechar_pesquisa())
+
+        function fechar_pesquisa() {
+            if (pesquisa.style.display === "block" && event.target !== pesquisa) {
+                pesquisa.style.display = "none"
+            }
+        }
+        */
+    
     } else {
         pesquisa.style.display = "none"
     }
+
 }
 
 // Fim do 

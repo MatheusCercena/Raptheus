@@ -33,7 +33,9 @@ header {
     justify-content: space-around;
     align-items: center;
 
-    position: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -77,7 +79,6 @@ header > div {
     font-family: 'Boomster';
     font-size: 1.5em;
     position: relative;
-
 }
 
 header > div > a {
@@ -102,6 +103,7 @@ header > div > a:hover {
     display: none;
     position: absolute;
     flex-flow: column wrap;
+    z-index: 10;
 
     top: 45px;
     left: 40px;
@@ -133,23 +135,54 @@ header > div > a:hover {
     transform: scale(1.15);
 }
 
-header > div > form > input, #pesquisa {
+header > div > form > input {
     border-radius: 8px;
     font-size: 0.75em;
     width: 135px;
     height: 37px;
     margin: 4px;
     border: 2px solid black;
+    outline: none; /*remove contorno azul do onfocus*/
 }
 
-#pesquisa {
-    position: absolute;
-    top: 0;
-    left: -10px;
-}
-
-header > div > form > input:hover, #pesquisa:hover {
+header > div > form > input:hover {
     transform: scale(1.15); 
+}
+
+#pesquisa_media_query {
+    border-radius: 8px;
+    font-size: 0.75em;
+    width: 140px;
+    height: 37px;
+    margin: 4px;
+    border: 2px solid black;
+    padding-left: 5px;
+
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -105px;
+    z-index: 10;
+    outline: none; /*remove contorno azul do onfocus*/
+}
+
+
+#simbolo-de-pesquisa {
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 4px;
+    box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+}
+
+#simbolo-de-pesquisa:hover {
+    background-color: white;
+    color: black;
+    transition:  background-color 0.3s;
+    transform: scale(1.15);
 }
 
 main {
@@ -159,7 +192,7 @@ main {
     background-image: url('imagens/hip-hop-album-covers-vs8liw8aqx3uxfg4\ -\ Copy.jpg');
     background-color: white; 
     background-repeat: repeat;
-    padding-top: 70px;
+    position: relative;
 }
 
 main > section {
@@ -363,25 +396,6 @@ footer {
     transform: scale(1.15);
 }
 
-#simbolo-de-pesquisa {
-    position: relative;
-    background-color: black;
-    color: white;
-    border-radius: 8px;
-    padding: 4px;
-    margin: 4px;
-    box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
-    cursor: pointer;
-
-}
-
-#simbolo-de-pesquisa:hover {
-    background-color: white;
-    color: black;
-    transition:  background-color 0.3s;
-    transform: scale(1.15);
-}
-
 #account_circle {
     background-color: black;
     font-size: 1em;
@@ -391,7 +405,6 @@ footer {
     margin: 4px;
     box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
     cursor: pointer;
-
 }
 
 #account_circle:hover {
@@ -400,8 +413,6 @@ footer {
     transition:  background-color 0.3s;
     transform: scale(1.15);
 }
-
-
 
 @media screen and (max-width: 1080px) {
     header > img {
