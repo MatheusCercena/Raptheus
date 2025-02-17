@@ -84,28 +84,11 @@ function aparecerMenu() {
 
 // Fim do Menu hamburguer
 
-// Começo do 
-
-function aparecerPesquisa() {
-    let pesquisa = document.getElementById('pesquisa_media_query')
-
-    if (pesquisa.style.display === "none") {
-        pesquisa.style.display = "block"
-        pesquisa.focus()
-        /*
-        window.addEventListener("click", fechar_pesquisa())
-
-        function fechar_pesquisa() {
-            if (pesquisa.style.display === "block" && event.target !== pesquisa) {
-                pesquisa.style.display = "none"
-            }
-        }
-        */
+        document.addEventListener("click", (event) => {
+            let pesquisa = document.getElementById('pesquisa_media_query')
+            let pesquisa2 = document.getElementById('simbolo-de-pesquisa')
     
-    } else {
-        pesquisa.style.display = "none"
-    }
-
-}
-
-// Fim do 
+            if (event.target !== pesquisa && event.target !== pesquisa2) {
+                pesquisa.style.display = "none";
+            }
+        })
