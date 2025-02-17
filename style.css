@@ -16,6 +16,10 @@
     src: url('fonts/RockSalt/LICENSERockSalt.ttf') format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;/*Por enquanto nao serve pra nada*/
+  }
+
 :root {
     --cor1: rgb(49, 48, 48);/*Menu e footer*/
 }
@@ -28,15 +32,6 @@ header {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-/* entender como funciona junto de scrollY
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--cor1);
-    transition: transform 0.3s ease-in-out;
-    z-index: 1000;
-*/
 }
 
 header > img {
@@ -110,7 +105,7 @@ header > div > a:hover {
     position: absolute;
     flex-flow: column wrap;
 
-    top: 40px;
+    top: 45px;
     left: 40px;
     background-color: black;
     border-radius: 8px;
@@ -119,6 +114,7 @@ header > div > a:hover {
     padding: 5px;
     margin: 4px;
     color: white;
+
 }
 
 #entre-cadastro > a  {
@@ -126,6 +122,10 @@ header > div > a:hover {
     border-radius: 8px;
     width: 100%;
     text-align: right;
+    margin: 2px;
+    transform: translate(-5px);
+    box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
+
 }
 
 #entre-cadastro  > a:hover {
@@ -133,14 +133,6 @@ header > div > a:hover {
     color: black;
     transition:  background-color 0.3s;
     transform: scale(1.15);
-}
-
-#menu-hamburguer {
-    display: ;
-    color: white;
-    background-color: black;
-    padding: 5px;
-    border-radius: 10px;
 }
 
 header > div > form > input {
@@ -183,10 +175,10 @@ main > section {
 }
 
 main > section > div {
-    height: 420px;
+    height: auto;
     border: 1px solid black;
     flex: 0 0 230px;
-    margin: 10px 10px 20px 10px;
+    margin: 10px 10px 10px 10px;
     padding: 10px;
     background-color: white;
     border-radius: 10px;
@@ -207,7 +199,7 @@ main > section > div > h1 {
     font-family: 'Boomster';
     text-align: center;
     margin-bottom: 10px;
-    font-size: 2em; /*No "Westside Conection" foi setado 1.5em, tentar resolver depois com javascript*/
+    font-size: 1.5em; 
 } 
 
 main > section > div > div > a {
@@ -275,6 +267,7 @@ footer {
 .modal-content-Entre > form > h1, .modal-content-Cadastro > form > h1  {
     font-family: 'Boomster';
     text-align: center;
+    max-width: 90%;
 }
 
 .modal-content-Entre > form > p > label, .modal-content-Cadastro > form > p > label {
@@ -322,6 +315,48 @@ footer {
 
 /*Fim modal login*/
 
+
+#menu-hamburguer {
+    display: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.media-query-600-nav  {
+    display: none;
+    align-self: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    width: max-content;
+    background-color: black;
+    border-radius: 8px;
+
+    font-family: 'Boomster';
+    font-size: 1.5em;
+}
+
+.media-query-600-nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    margin: 2px;
+    box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
+    text-align: center;
+}
+
+.media-query-600-nav > a:hover {
+    background-color: white;
+    color: black;
+    transition:  background-color 0.3s;
+    transform: scale(1.15);
+}
+
 @media screen and (max-width: 1080px) {
     header > img {
         order: 1;
@@ -336,7 +371,7 @@ footer {
         display: none;
     }
 
-    .media-query-1980-nav-outros {
+    .media-query-1980-nav-ver_todos {
         display: none;
     }
     .no-query-div {
@@ -364,11 +399,15 @@ footer {
         display: none;
     }
 
+    .media-query-600-nav {
+        display: none;
+    }
+
     .no-query-nav {
         display: none;
     }
 
-    .media-query-1980-nav-outros {
+    .media-query-1980-nav-ver-todos {
         display: none;
     }
     .no-query-div {
@@ -385,8 +424,15 @@ footer {
 
     #menu-hamburguer {
         order: 2;
+        display: flex;
 
     }
+    
+    main > section > div {
+        height: auto;
+        flex: 0 0 150px;
+    }
+
 
 }
 
