@@ -84,11 +84,12 @@ function aparecerMenu() {
 
 // Fim do Menu hamburguer
 
-        document.addEventListener("click", (event) => {
-            let pesquisa = document.getElementById('pesquisa_media_query')
-            let pesquisa2 = document.getElementById('simbolo-de-pesquisa')
-    
-            if (event.target !== pesquisa && event.target !== pesquisa2) {
-                pesquisa.style.display = "none";
-            }
-        })
+function aparecerPesquisa() {
+    let pesquisa = document.getElementById('pesquisa_media_query')
+    if (pesquisa.style.display === "none") {
+        pesquisa.style.display = "flex"
+    } else {
+        pesquisa.style.display = "none"
+    }
+}
+
