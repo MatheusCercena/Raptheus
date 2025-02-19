@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+#entre-cadastro {
+    display: none;
+    position: absolute;
+    flex-flow: column wrap;
+    z-index: 10;
+
+    top: 45px;
+    left: 40px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
+    text-decoration: none;
+    padding: 5px;
+    margin: 4px;
+    color: white;
+}
+
+#entre-cadastro > a  {
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    text-align: right;
+    margin: 2px;
+    transform: translate(-5px);
+    box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
+}
+
+#entre-cadastro  > a:hover {
+    background-color: white;
+    color: black;
+    transition:  background-color 0.3s;
+    transform: scale(1.15);
+}
+
+.modal-Entre, .modal-Cadastro {
+    display: none;
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.modal-content-Entre {
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    flex-basis: auto;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content-Cadastro {
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    flex-basis: auto;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content-Entre > form, .modal-content-Cadastro > form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content-Entre > form > h1, .modal-content-Cadastro > form > h1  {
+    font-family: 'Boomster';
+    text-align: center;
+    max-width: 90%;
+}
+
+.modal-content-Entre > form > p > label, .modal-content-Cadastro > form > p > label {
+    font-family: 'RockSalt';
+}
+
+.modal-content-Entre > form > p > input, .modal-content-Cadastro > form > p > input  {
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid var(--cor1);
+    padding-left: 10px;
+}
+
+.modal-content-Entre > form > p > input:hover, .modal-content-Cadastro > form > p > input:hover {
+    border: 2px solid  rgba(49, 48, 48, 0.8);
+    transform: scale(1.03);
+
+} 
+
+.modal-content-Entre > form > input, .modal-content-Cadastro > form > input {
+    height: 40px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 13px;
+    color: white;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor1);
+}
+
+.modal-content-Entre > form > input:hover, .modal-content-Cadastro > form > input:hover {
+    background-color: rgba(49, 48, 48, 0.8);
+    transform: scale(1.03);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}

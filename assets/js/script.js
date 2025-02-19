@@ -16,6 +16,7 @@ Header fixado
 
 */
 
+
 // Começo do Modal Entre
 
 let modalEntre = document.querySelector('.modal-Entre')
@@ -37,6 +38,7 @@ function closeModalEntre2() {
 }
 
 // Fim do Modal Entre
+
 
 // Começo do Modal Cadastro
 
@@ -115,6 +117,3 @@ mudarPaddingDoMain() // chama a funcao ao carregar a pagina
 
 // Fim do Header fixado
 
-/*
-Fazer o menu desaparecer se entre-cadastro estiver ativado
-*/
