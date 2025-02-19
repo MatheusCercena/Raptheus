@@ -16,10 +16,6 @@
     src: url('fonts/RockSalt/LICENSERockSalt.ttf') format('truetype');
 }
 
-html {
-    scroll-behavior: smooth;/*Por enquanto nao serve pra nada*/
-  }
-
 :root {
     --cor1: rgb(49, 48, 48);/*Menu e footer*/
 }
@@ -33,10 +29,11 @@ header {
     justify-content: space-around;
     align-items: center;
 
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
 }
 
 header > img {
@@ -114,7 +111,6 @@ header > div > a:hover {
     padding: 5px;
     margin: 4px;
     color: white;
-
 }
 
 #entre-cadastro > a  {
@@ -125,7 +121,6 @@ header > div > a:hover {
     margin: 2px;
     transform: translate(-5px);
     box-shadow: 2px 2px 0px -1px rgba(128, 128, 128, 0.5);
-
 }
 
 #entre-cadastro  > a:hover {
@@ -165,7 +160,6 @@ header > div > form > input:hover {
     z-index: 10;
     outline: none; /*remove contorno azul do onfocus*/
 }
-
 
 #simbolo-de-pesquisa {
     position: relative;
@@ -209,7 +203,7 @@ main > section > div {
     border: 1px solid black;
     flex: 0 0 230px;
     margin: 10px 10px 10px 10px;
-    padding: 10px;
+    padding: 10px;  
     background-color: white;
     border-radius: 10px;
 }

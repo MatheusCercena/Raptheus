@@ -12,7 +12,7 @@
 Feito:
 Login/Cadastro – Abrir uma janela modal ao clicar em "Entre" ou "Cadastro".
 Menu Responsivo – Criar um menu de hambúrguer para telas menores.
-Scroll Suave – Melhorar a navegação entre seções com um efeito de rolagem suave.
+Header fixado
 
 */
 
@@ -84,6 +84,8 @@ function aparecerMenu() {
 
 // Fim do Menu hamburguer
 
+// Começo da pesquisa
+
 function aparecerPesquisa() {
     let pesquisa = document.getElementById('pesquisa_media_query')
     if (pesquisa.style.display === "none") {
@@ -93,3 +95,26 @@ function aparecerPesquisa() {
     }
 }
 
+// Fim da pesquisa
+
+// Começo do Header fixado
+
+let main = document.querySelector('main')
+let header = document.querySelector('header')
+
+function mudarPaddingDoMain() {
+    let headerHeight = document.querySelector('header').offsetHeight
+
+    main.style.paddingTop = headerHeight + 'px' // É preciso colocar px pois o css espera um padding-top com unidade em px.
+}
+
+let resizeDoMain = new ResizeObserver(mudarPaddingDoMain) // cria uma instancia de uma API do JS que é um observador de resize que chama a funcao mudarPaddingDoMain quando o elemento do "observe" muda de tamanho, no caso o header.
+resizeDoMain.observe(header) // observa o tamanho do header e chama a funcao definida na variavel 
+
+mudarPaddingDoMain() // chama a funcao ao carregar a pagina
+
+// Fim do Header fixado
+
+/*
+Fazer o menu desaparecer se entre-cadastro estiver ativado
+*/
