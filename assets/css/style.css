@@ -8,12 +8,12 @@
 
 @font-face  {
     font-family: 'Boomster';
-    src: url('fonts/boomster_graffiti/BOOMSTER.otf') format('truetype');
-}
+    src: url('../fonts/boomster_graffiti/BOOMSTER.otf') format('opentype');
+}   
 
 @font-face {
     font-family: 'RockSalt';
-    src: url('fonts/RockSalt/LICENSERockSalt.ttf') format('truetype');
+    src: url('../fonts/RockSalt/LICENSERockSalt.ttf') format('truetype');
 }
 
 :root {
@@ -183,7 +183,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;    
-    background-image: url('imagens/hip-hop-album-covers-vs8liw8aqx3uxfg4\ -\ Copy.jpg');
+    background-image: url('../imagens/hip-hop-album-covers-vs8liw8aqx3uxfg4\ -\ Copy.jpg');
     background-color: white; 
     background-repeat: repeat;
     position: relative;
