@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="assets/css/modal_pesquisa.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/> 
 </head>
 <body>
     <header>
         <img src="assets/imagens/logo-site.png" id="logo">
         <nav class="no-query-nav">
-            <a href="#">Eminem</a>
+            <a href="paginas_secundarias/Eminem/eminem.html">Eminem</a>
             <a href="#">2Pac</a>
             <a href="#">Big Poppa</a>
             <a href="#">Snoop-Dogg</a>
@@ -44,8 +45,17 @@
             <a onclick="aparecer_modalCadastro()">Cadastro</a>
         </div>
         <div class="media-query-1980-div">
-            <div id="simbolo-de-pesquisa"><div class="material-symbols-outlined" onclick="aparecerPesquisa()"> search </div></div>
-            <form action="#"><input type="text" placeholder="Pesquise no site" id="pesquisa_media_query"></input></form>
+            <div id="simbolo-de-pesquisa">
+                <div class="material-symbols-outlined" onclick="aparecerPesquisa()">
+                    search
+                </div>
+            </div>
+            <div class="modal_pesquisa"></div>
+                <form action="#">
+                    <input type="text" placeholder="Pesquise no site" id="pesquisa_media_query"></input>
+                </form>    
+    
+        
             <a href="#">Loja</a>
                 <div class="material-symbols-outlined" id="account_circle" onclick="aparecerEntreCadastro()"> 
                     account_circle
@@ -54,7 +64,7 @@
                     <a onclick="aparecer_modalEntre()">Entre</a>
                     <a onclick="aparecer_modalCadastro()">Cadastro</a>
             </div>
-        </div>...
+        </div>
         <div id="menu-hamburguer">
             <div class="material-symbols-outlined" onclick="aparecerMenu()">
                 menu
@@ -65,13 +75,13 @@
                 <a href="#">Big Poppa</a>
                 <a href="#">Ver todos</a>
             </nav>
-        </div>
+        </div>    
     </header>
     <main>
         <section>
             <div>
                 <h1>Eminem</h1>
-                <a href="#"><img src="assets/imagens/eminem face.jpg"></a>
+                <a href="paginas_secundarias/Eminem/eminem.html"><img src="assets/imagens/eminem face.jpg"></a>
                 <div>
                     <a href="#">Albums</a><br>
                     <a href="#">Bio</a><br>
@@ -209,7 +219,7 @@
                     <input type="submit" value="Entrar">
             </form>
         </div>
-    </div>    
+    </div>
         <footer>
             <h1>Institucional</h1>
             <p>Quem somos</p>
