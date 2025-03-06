@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/*Reset CSS*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: rgb(49, 48, 48);/*Cor do menu e footer*/
+}
+

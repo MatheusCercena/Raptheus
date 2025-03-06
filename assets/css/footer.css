@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+}

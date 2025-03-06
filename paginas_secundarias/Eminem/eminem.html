@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eminem</title>
+    <link rel="shortcut icon" href="../../assets/imagens/logo-site.avif" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/imagens/logo-site.avif" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/fonts.css">
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/modal_entre-cadastro.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="stylesheet" href="../../assets/css/media-queries.css">
+    <link rel="stylesheet" href="../../assets/css/modal_pesquisa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/> 
+</head>
+<body>
+    <header>
+        <img src="../../assets/imagens/logo-site.png" id="logo">
+        <nav class="no-query-nav">
+            <a href="#">Eminem</a>
+            <a href="#">2Pac</a>
+            <a href="#">Big Poppa</a>
+            <a href="#">Snoop-Dogg</a>
+            <a href="#">IceCube</a>
+            <a href="#">50 Cent</a>
+            <a href="#">Dr. Dre</a>
+            <a href="#">Slick Rick</a>
+            <a href="#">NWA</a>
+            <a href="#">D12</a>
+            <a href="#">Westside Conection</a>
+            <a href="#">Ver todos</a>
+        </nav>
+        <nav class="media-query-1980-nav">
+            <a href="#">Eminem</a>
+            <a href="#">2Pac</a>
+            <a href="#">Big Poppa</a>
+            <a href="#">Ver todos</a>
+        </nav>
+        <div class="no-query-div">
+            <form action="#"><input type="text" placeholder="Pesquise no site" id="pesquisa"></input></form>
+            <a href="#">Loja</a>
+            <a onclick="aparecer_modalEntre()">Entre</a>
+            <a onclick="aparecer_modalCadastro()">Cadastro</a>
+        </div>
+        <div class="media-query-1980-div">
+            <div id="simbolo-de-pesquisa">
+                <div class="material-symbols-outlined" onclick="aparecerPesquisa()">
+                    search
+                </div>
+            </div>
+            <div class="modal_pesquisa"></div>
+                <form action="#">
+                    <input type="text" placeholder="Pesquise no site" id="pesquisa_media_query"></input>
+                </form>    
+
+        
+            <a href="#">Loja</a>
+                <div class="material-symbols-outlined" id="account_circle" onclick="aparecerEntreCadastro()"> 
+                    account_circle
+                </div>
+            <div id="entre-cadastro">
+                    <a onclick="aparecer_modalEntre()">Entre</a>
+                    <a onclick="aparecer_modalCadastro()">Cadastro</a>
+            </div>
+        </div>
+        <div id="menu-hamburguer">
+            <div class="material-symbols-outlined" onclick="aparecerMenu()">
+                menu
+            </div>
+            <nav class="media-query-600-nav">
+                <a href="#">Eminem</a>
+                <a href="#">2Pac</a>
+                <a href="#">Big Poppa</a>
+                <a href="#">Ver todos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <iframe src="" frameborder="0"><div id='rg_embed_link_207' class='rg_embed_link' data-song-id='207'>Read <a href='https://genius.com/Eminem-lose-yourself-lyrics'>“Lose Yourself” by Eminem</a> on Genius</div> <script crossorigin src='//genius.com/songs/207/embed.js'></script></iframe>
+    </main>
+    <div class="modal-Entre">
+        <div class="modal-content-Entre">
+            <form action="#">
+                <h1>Entre na sua conta</h1>
+                <div class="material-symbols-outlined close" id="close" onclick="closeModalEntre()">close</div>
+
+                    <p>
+                        <label for="Email">Digite o seu email:</label>
+                        <input type="email" name="Email" id="iEmail">
+                    </p>
+                    <p>
+                        <label for="Senha">Digite sua senha:</label><br>
+                        <input type="password" name="Senha" id="iSenha" placeholder="Até 8 caracteres">
+                    </p>
+                    <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </div>
+    <div class="modal-Cadastro">
+        <div class="modal-content-Cadastro">
+            <span class="material-symbols-outlined close" id="close" onclick="closeModalCadastro()">close</span>
+            <form action="#">
+                <h1>Cadastre-se</h1>
+                    <p>
+                        <label for="Email">Digite o seu email:</label>
+                        <input type="email" name="Email" id="iEmail2">
+                    </p>
+                    <p>
+                        <label for="Email">Confirme o seu email:</label>
+                        <input type="email" name="Email" id="iEmail2">
+                    </p>
+    
+                    <p>
+                        <label for="Senha">Defina sua senha:</label><br>
+                        <input type="password" name="Senha" id="iSenha2" placeholder="Até 8 caracteres">
+                    </p>
+                    <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </div>
+        <footer>
+            <h1>Institucional</h1>
+            <p>Quem somos</p>
+            <p>Contato (telefone, redes sociais, etc)</p>
+            <p>Loja</p>
+            <p>Minha conta</p>
+            <p>etc</p>
+            <p>Site desenvolvido em jan/25 por Matheus Cercena do Nascimento. All Rights Reserved ©.</p>
+        </footer>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

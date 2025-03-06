@@ -16,6 +16,7 @@ Header fixado
 
 */
 
+
 // Começo do Modal Entre
 
 let modalEntre = document.querySelector('.modal-Entre')
@@ -37,6 +38,7 @@ function closeModalEntre2() {
 }
 
 // Fim do Modal Entre
+
 
 // Começo do Modal Cadastro
 
@@ -86,16 +88,41 @@ function aparecerMenu() {
 
 // Começo da pesquisa
 
-function aparecerPesquisa() {
+/*
     let pesquisa = document.getElementById('pesquisa_media_query')
-    if (pesquisa.style.display === "none") {
+    let modalPesquisa = document.querySelector('.modal_pesquisa')
+
+function aparecerPesquisa() {
         pesquisa.style.display = "flex"
-    } else {
+        modalPesquisa.style.display = "flex"
+    } 
+
+window.addEventListener("click", fecharPesquisa)
+
+function fecharPesquisa() {
+    if (event.target == modalPesquisa) {
         pesquisa.style.display = "none"
+        modalPesquisa.style.display = "none"
     }
 }
 
-// Fim da pesquisa
+*/
+let pesquisa = document.getElementById('pesquisa_media_query')
+let modalPesquisa = document.querySelector('.modal_pesquisa')
+
+function aparecerPesquisa() {
+        pesquisa.style.display = "flex"
+        modalPesquisa.style.display = "flex"
+    } 
+
+window.addEventListener("click", fecharPesquisa)
+
+function fecharPesquisa() {
+    if (event.target == modalPesquisa) {
+        pesquisa.style.display = "none"
+        modalPesquisa.style.display = "none"
+    }
+}
 
 // Começo do Header fixado
 
@@ -115,6 +142,3 @@ mudarPaddingDoMain() // chama a funcao ao carregar a pagina
 
 // Fim do Header fixado
 
-/*
-Fazer o menu desaparecer se entre-cadastro estiver ativado
-*/

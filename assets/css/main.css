@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;    
+    background-image: url('../imagens/hip-hop-album-covers-vs8liw8aqx3uxfg4\ -\ Copy.jpg');
+    background-color: white; 
+    background-repeat: repeat;
+    position: relative;
+}
+
+main > section {
+    width: 1250px;
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    justify-self: center;
+}
+
+main > section > div {
+    height: auto;
+    border: 1px solid black;
+    flex: 0 0 230px;
+    margin: 10px;
+    padding: 10px;  
+    background-color: white;
+    border-radius: 10px;
+}
+
+main > section > div:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.08);
+}
+
+main > section > div > a > img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+} 
+
+main > section > div > h1 { 
+    font-family: 'Boomster';
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em; 
+} 
+
+main > section > div > div > a {
+    font-family: 'Boomster';
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+} 
+
+main > section > div > div > a:hover {
+    text-shadow: 1px 1px 1px rgba(49, 48, 48, 0.5);
+    text-decoration: underline;
+    transform: scale(1.15);
+} 
+
