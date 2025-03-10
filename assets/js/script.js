@@ -11,6 +11,7 @@
 9 - Fazer o Menu aparecer ao fazer scroll pra cima (e remover menu fixado)
 10 - Um reconhecedor de rimas em python que sugere palavras que rimam com a palavra digitada.
 11 - Colocar opção conta após fazer cadastro com email de completar dados e fazer upload de fotos.
+12 - verificação com captcha
 Feito:
 Login/Cadastro – Abrir uma janela modal ao clicar em "Entre" ou "Cadastro".
 Menu Responsivo – Criar um menu de hambúrguer para telas menores.
